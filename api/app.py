@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import shutil
 from pathlib import Path
 
@@ -18,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-CHECKPOINT_PATH = "models/checkpoints/mobilenetv3/field_finetune/best.pt"
+CHECKPOINT_PATH = os.getenv("CHECKPOINT_PATH", "models/checkpoints/mobilenetv3/field_finetune/best.pt")
 UPLOAD_DIR = Path("api/uploads")
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
