@@ -18,6 +18,6 @@ results/
 
 # OS / IDE
 .vscode/
+.vs/
 .idea/
 Thumbs.db
-
