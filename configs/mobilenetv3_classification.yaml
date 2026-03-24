@@ -1,0 +1,21 @@
+seed: 42
+num_workers: 2
+image_size: 224
+batch_size: 32
+epochs: 10
+learning_rate: 0.0003
+weight_decay: 0.0001
+device: auto
+model_name: mobilenet_v3_large
+train_dir: data/processed/plantvillage_cls/train
+val_dir: data/processed/plantvillage_cls/val
+test_dir: data/processed/plantvillage_cls/test
+field_eval_dir: data/processed/field_cls/all
+field_finetune_train_dir: data/processed/field_cls/train
+field_finetune_val_dir: data/processed/field_cls/val
+field_finetune_test_dir: data/processed/field_cls/test
+checkpoint_dir: models/checkpoints/mobilenetv3
+init_checkpoint:
+class_names:
+  - class_0
+  - class_1

@@ -1,0 +1,7 @@
+plantvillage_root: data/raw/plantvillage
+field_root: data/raw/field_600
+field_labels_csv: data/metadata/field_labels.csv
+split_manifest_csv: data/metadata/split_manifest.csv
+classification_output_root: data/processed/field_cls
+yolo_output_root: data/processed/yolo_seg
+

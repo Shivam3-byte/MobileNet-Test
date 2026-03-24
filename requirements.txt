@@ -1,0 +1,17 @@
+torch>=2.2.0
+torchvision>=0.17.0
+torchaudio>=2.2.0
+opencv-python>=4.9.0
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+Pillow>=10.2.0
+PyYAML>=6.0.1
+tqdm>=4.66.0
+fastapi>=0.110.0
+uvicorn>=0.29.0
+python-multipart>=0.0.9
+grad-cam>=1.5.0
+ultralytics>=8.2.0
+

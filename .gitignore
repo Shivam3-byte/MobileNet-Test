@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# Data and model artifacts
+data/raw/
+data/interim/
+data/processed/
+models/checkpoints/
+models/exported/
+results/
+
+# OS / IDE
+.vscode/
+.idea/
+Thumbs.db
+
