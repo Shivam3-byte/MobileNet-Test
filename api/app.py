@@ -4,10 +4,19 @@ import shutil
 from pathlib import Path
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.classification.infer import predict_image
 
 app = FastAPI(title="Plant Disease Detection API", version="0.1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 CHECKPOINT_PATH = "models/checkpoints/mobilenetv3/field_finetune/best.pt"
 UPLOAD_DIR = Path("api/uploads")
